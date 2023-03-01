@@ -1,0 +1,29 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TeknoParrotMassBinder", "TeknoParrotMassBinder\TeknoParrotMassBinder.csproj", "{186CADE2-6BEF-49F6-AE40-2AA1DB6454AE}"
+EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "Setup", "Setup\Setup.vdproj", "{7A5EB737-2EAE-4191-9051-467BD4A297DA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{186CADE2-6BEF-49F6-AE40-2AA1DB6454AE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{186CADE2-6BEF-49F6-AE40-2AA1DB6454AE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{186CADE2-6BEF-49F6-AE40-2AA1DB6454AE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{186CADE2-6BEF-49F6-AE40-2AA1DB6454AE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7A5EB737-2EAE-4191-9051-467BD4A297DA}.Debug|Any CPU.ActiveCfg = Debug
+		{7A5EB737-2EAE-4191-9051-467BD4A297DA}.Release|Any CPU.ActiveCfg = Release
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {F17B1C1C-D6D3-4518-83DA-4C22B305A820}
+	EndGlobalSection
+EndGlobal
