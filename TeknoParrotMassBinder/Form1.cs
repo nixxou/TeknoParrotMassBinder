@@ -130,13 +130,16 @@ namespace TeknoParrotMassBinder
 			string[] xmlList = Directory.GetFiles(txt_dir.Text, "*.xml");
 			foreach (string xml in xmlList)
 			{
-				var NewGame = new Game(xml);
-				Games.Add(NewGame.Name, NewGame);
-				checkedListBox1.Items.Add(NewGame.Name);
-				combo_gameselection.Items.Add(NewGame.Name);
-				XMLList.Add(NewGame.Name, xml);
+				try
+				{
+					var NewGame = new Game(xml);
+					Games.Add(NewGame.Name, NewGame);
+					checkedListBox1.Items.Add(NewGame.Name);
+					combo_gameselection.Items.Add(NewGame.Name);
+					XMLList.Add(NewGame.Name, xml);
 
-
+				}
+				catch { }
 			}
 			if (Games.Count > 0)
 			{

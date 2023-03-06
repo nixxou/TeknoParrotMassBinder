@@ -27,8 +27,13 @@ namespace WindowsFormsApp1
 			var fichiers = Directory.GetFiles(sourceDir,"*.xml");
 			foreach(var f in fichiers)
 			{
-				Game game = new Game(f);
-				ListGames.Add(game.Name, game);
+				try
+				{
+					Game game = new Game(f);
+					ListGames.Add(game.Name, game);
+
+				}
+				catch { }
 			}
 		}
 

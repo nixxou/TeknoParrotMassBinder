@@ -50,6 +50,8 @@ namespace WindowsFormsApp1
 					.ToArray())
 				.FirstOrDefault();
 
+			if (capabilities == null) throw new Exception("No Capabilities");
+
 
 			if (capabilities.Contains("DirectInput")) isDinputCapable = true;
 			if (capabilities.Contains("XInput")) isXinputCapable = true;
@@ -57,6 +59,7 @@ namespace WindowsFormsApp1
 
 
 
+			List<string> DuplicateButtonToDelete = new List<string>();
 
 			var buttonNames = _document.Descendants("JoystickButtons")
 				.Where(j => !string.IsNullOrEmpty((string)j.Element("ButtonName")))
@@ -86,7 +89,12 @@ namespace WindowsFormsApp1
 					if (!NewButton.isRawinput) fullyBinded = false;
 					else bindCount++;
 				}
-				Buttons.Add(btnName, NewButton) ;
+
+				if (!Buttons.ContainsKey(btnName))
+				{
+					Buttons.Add(btnName, NewButton);
+				}
+				
 			}
 		}
 
